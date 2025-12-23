@@ -4,62 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoboLitter Pro - Premium Robot Cat Litter Boxes</title>
-    <meta name="description" content="Discover the top 25 automatic robot cat litter boxes. Compare prices, reviews, and features. Free shipping available.">
+    <meta name="description" content="Discover the top 25 automatic robot cat litter boxes. Compare prices, reviews, and features.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1e293b; }
-
-        /* Navigation */
         nav { background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         nav .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; display: flex; justify-content: space-between; align-items: center; }
         nav .logo { font-size: 1.5rem; font-weight: 700; color: white; text-decoration: none; }
         nav ul { display: flex; list-style: none; gap: 2rem; }
         nav a { color: white; text-decoration: none; font-weight: 500; transition: opacity 0.3s; }
-        nav a:hover { opacity: 0.8; }
-
-        /* Hero Section */
         .hero { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 5rem 2rem; text-align: center; }
         .hero h1 { font-size: 3rem; margin-bottom: 1rem; font-weight: 800; }
-        .hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.95; }
-        .hero .cta { background: white; color: #4F46E5; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: transform 0.3s; }
-        .hero .cta:hover { transform: scale(1.05); }
-
-        /* Container */
+        .hero p { font-size: 1.25rem; margin-bottom: 2rem; }
+        .hero .cta { background: white; color: #4F46E5; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; }
         .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
-
-        /* Products Grid */
-        .products-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; color: #1e293b; }
+        .products-section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
         .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
-
-        /* Product Card */
-        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
         .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
         .product-image { width: 100%; height: 250px; object-fit: cover; }
         .product-info { padding: 1.5rem; }
-        .product-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; color: #1e293b; height: 3rem; overflow: hidden; }
+        .product-title { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; height: 3rem; overflow: hidden; }
         .product-rating { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: #f59e0b; }
         .product-price { font-size: 1.5rem; font-weight: 700; color: #4F46E5; margin-bottom: 1rem; }
-        .product-price .old-price { text-decoration: line-through; color: #94a3b8; font-size: 1rem; margin-left: 0.5rem; }
-        .buy-btn { display: block; width: 100%; background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%); color: white; padding: 0.75rem; border: none; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; cursor: pointer; transition: opacity 0.3s; }
-        .buy-btn:hover { opacity: 0.9; }
-
-        /* Features Section */
+        .buy-btn { display: block; width: 100%; background: linear-gradient(135deg, #4F46E5 0%, #06B6D4 100%); color: white; padding: 0.75rem; border: none; border-radius: 8px; font-weight: 700; text-decoration: none; text-align: center; }
         .features { background: #f8fafc; padding: 4rem 2rem; }
         .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 3rem; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
-        .feature-card { background: white; padding: 2rem; border-radius: 12px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .feature-card { background: white; padding: 2rem; border-radius: 12px; text-align: center; }
         .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .feature-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; }
-
-        /* Footer */
         footer { background: #1e293b; color: white; padding: 3rem 2rem; text-align: center; }
-        footer p { opacity: 0.8; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .products-grid { grid-template-columns: 1fr; }
-            nav ul { gap: 1rem; }
-        }
     </style>
 </head>
 <body>
@@ -69,79 +43,37 @@
             <ul>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
     <div class="hero">
         <h1>Top 25 Robot Cat Litter Boxes</h1>
         <p>Automatic, Self-Cleaning, Smart Solutions for Modern Cat Owners</p>
         <a href="#products" class="cta">Shop Now</a>
     </div>
-
     <div class="products-section" id="products">
         <div class="container">
             <h2>Premium Robot Litter Boxes</h2>
             <div class="products-grid" id="productsContainer"></div>
         </div>
     </div>
-
     <div class="features" id="features">
         <h2>Why Choose Robot Litter Boxes?</h2>
         <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3 class="feature-title">Automatic Cleaning</h3>
-                <p>Self-cleaning technology saves you hours of manual work</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3 class="feature-title">App Control</h3>
-                <p>Monitor and control from anywhere with smartphone apps</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🛡️</div>
-                <h3 class="feature-title">Safety Sensors</h3>
-                <p>Advanced sensors protect your cats during operation</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💨</div>
-                <h3 class="feature-title">Odor Control</h3>
-                <p>Built-in odor elimination keeps your home fresh</p>
-            </div>
+            <div class="feature-card"><div class="feature-icon">🤖</div><h3>Automatic Cleaning</h3><p>Self-cleaning technology saves hours</p></div>
+            <div class="feature-card"><div class="feature-icon">📱</div><h3>App Control</h3><p>Monitor from anywhere</p></div>
+            <div class="feature-card"><div class="feature-icon">🛡️</div><h3>Safety Sensors</h3><p>Advanced cat protection</p></div>
+            <div class="feature-card"><div class="feature-icon">💨</div><h3>Odor Control</h3><p>Keeps your home fresh</p></div>
         </div>
     </div>
-
-    <footer id="contact">
-        <p>&copy; 2025 RoboLitter Pro. All rights reserved.</p>
-        <p>Premium automatic cat litter solutions for modern pet owners</p>
-    </footer>
-
+    <footer><p>&copy; 2025 RoboLitter Pro</p></footer>
     <script>
-        // Product data will be embedded here
-        const products = [{"name": "OROLEY Self Cleaning Cat Litter Box, Open-Top,Automatic Litter Box,Odor Control Robot, 96L APP Real-Time Monitor, Cat Litter-Boxs for Multiple Cats,Infrared Safety Sensor,Gray", "price": 371.74, "rating": 4.8, "reviews": 6, "image": "https://m.media-amazon.com/images/I/71wrtEzXcML._AC_UL320_.jpg", "link": "https://www.amazon.com/sspa/click?ie=UTF8&spc=MToxMDE5Njk3MDM4NDQzODg2OjE3NjY0ODQ4NjU6c3BfYXRmOjMwMTExMTc4Njc1MzgwMjo6MDo6&url=%2FOROLEY-Cleaning-Automatic-Real-Time-Litter-Boxs%2Fdp%2FB0FY32H1B8"}];
-
-        const container = document.getElementById('productsContainer');
-        products.forEach(product => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}" class="product-image" onerror="this.src='https://via.placeholder.com/300x250?text=Product+Image'">
-                <div class="product-info">
-                    <h3 class="product-title">${product.name.substring(0, 60)}...</h3>
-                    <div class="product-rating">
-                        ${'★'.repeat(Math.floor(product.rating || 0))}${'☆'.repeat(5 - Math.floor(product.rating || 0))}
-                        <span>(${product.reviews || 0} reviews)</span>
-                    </div>
-                    <div class="product-price">
-                        $${product.price.toFixed(2)}
-                        ${product.old_price ? `<span class="old-price">$${product.old_price.toFixed(2)}</span>` : ''}
-                    </div>
-                    <a href="${product.link}" target="_blank" class="buy-btn">Buy Now</a>
-                </div>
-            `;
-            container.appendChild(card);
+        fetch('https://api.github.com/repos/globalvet2025/robolitter-store').then(() => {
+            const products = [{"name":"OROLEY Self Cleaning Cat Litter Box","price":371.74,"rating":4.8,"reviews":6,"image":"https://m.media-amazon.com/images/I/71wrtEzXcML._AC_UL320_.jpg","link":"https://www.amazon.com/dp/B0FY32H1B8"}];
+            const container = document.getElementById('productsContainer');
+            products.forEach(p => {
+                container.innerHTML += `<div class="product-card"><img src="${p.image}" class="product-image"><div class="product-info"><h3 class="product-title">${p.name.substring(0,60)}...</h3><div class="product-rating">${'★'.repeat(Math.floor(p.rating))}☆ (${p.reviews})</div><div class="product-price">$${p.price}</div><a href="${p.link}" class="buy-btn" target="_blank">Buy Now</a></div></div>`;
+            });
         });
     </script>
 </body>
